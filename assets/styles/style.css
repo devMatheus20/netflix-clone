@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000;
+}
+
+body a {
+    text-decoration: none;
+    outline: none;
+}
+
+
+                            /* --------------------------- HEADER -----------------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 25px;
+    background-color: black;
+}
+
+.logo img {
+    height: 70px;
+}
+
+.nav-list {
+    text-decoration: none;
+}
+
+.item-list {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: white;
+    outline: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+                        /* --------------------------- HEADER END -----------------------------*/
+
+
+                        /* --------------------------- START MAIN -----------------------------*/
+
+main {
+    background-color: #000; 
+}
+
+.section-top {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url(https://www.themoviedb.org/t/p/original/nIHp6fz2MX33blJKYa9BSbhct7W.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 100px 0 100px 0;
+}
+
+.div-top {
+    padding-left: 30px;
+    padding-top: 50px;
+    width: 60%;
+}
+
+.article-top {
+    color: #FFF;
+}
+
+.article-top h2 {
+    font-size: 50px;
+    font-weight: 540;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.article-top p {
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.btn-play {
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 550;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+
+    transition: 0.3s;
+}
+
+.btn-play:hover {
+    background-color: #FFF;
+    color: black;
+}
+
+
+.btn-play i {
+    margin-right: 8px;  
+}
+
+
+.btn-info {
+    padding: 15px 17px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    background-color: #FFF;
+    color: black;
+}
+
+.btn-info i{
+    margin-right: 8px;
+}
+
+                                /* --------------------------- MAIN END -----------------------------*/
+
+
+
+
+                                /* --------------------------- SECTION MID ----------------------------*/
+
+.section-mid {
+    margin-top: 10px;
+}
+
+.article-title {
+    margin-left: 3%;
+    margin-bottom: 15px;
+}
+
+.article-title h3 {
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.owl-carousel, .owl-theme {
+    padding: 0 2%;
+}
+
+.box-filme {
+    border-radius: 4px;
+    transition: 0.21s;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.box-filme:hover {
+    transform: scale(1);
+}
+
+#embreve, #films, #series, #document {
+    margin-bottom: 10px;
+}
+
+                                /* --------------------------- SECTION MID END ----------------------------*/
+
+
+
+
+                                /*  ------------------------------ FOOTER --------------------------------- */
+
+footer {
+    background-color: #000;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+.p-footer {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    
+} 
+
+                            /*  ---------------------------------- FOOTER END ---------------------------------- */
+
+
+
+
+                            /*  ----------------------------------  MOBILE ---------------------------------- */
+
+
+@media (max-width:720px) {
+
+    header {
+        padding: 0;
+    }
+
+    .div-top {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .div-top h2 {
+        font-size: 30px;
+    }
+
+    .div-top p {
+        font-size: 14px;
+    }
+
+    .btn-play {
+        padding: 10px 10px;
+    }
+
+    .btn-info {
+        padding: 10px 9px;
+    }
+}
+
+
+@media(max-width: 560px) {
+    header {
+        flex-direction: column;
+    }
+
+    #embreve, #films, #series, #document {
+        margin-top: 50px;
+    }
+
+    .article-title {
+        margin-left: 5%;
+    }
+
+    .nav-list {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .item-list {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .div-top p {
+        margin-bottom: 30px;
+    }
+
+    .btn-play {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+
+@media(max-width: 361px) {
+    header {
+        flex-direction: row;
+        padding: 0 10px 0 0;
+    }
+    
+    .nav-list {
+        margin-top: 5px;
+    }
+
+    .item-list {
+        display: block;
+        text-align: right;
+    }
+}
