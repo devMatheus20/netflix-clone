@@ -16,6 +16,7 @@
 
     <link rel="stylesheet" href="./assets/styles/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/styles/owl/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -30,13 +31,15 @@
         </div>
 
         <nav>
-            <ul class="nav-list">
+            <ul id="menu-list" class="nav-list">
                 <li class="item-list"><a class="nav-link" href="">Início</a></li>
                 <li class="item-list"><a class="nav-link" href="#series">Séries</a></li>
                 <li class="item-list"><a class="nav-link" href="#films">Filmes</a></li>
                 <li class="item-list"><a class="nav-link" href="#document">Documentários</a></li>
             </ul>
         </nav>
+
+        <i onclick="showMenu()" class="toggle bx bx-menu img-menu"></i>
     </header>
 
     <main>
@@ -267,7 +270,8 @@
     </section>
 
     <footer>
-        <p class="p-footer">Desenvolvido por: Matheus Santos</p>
+        <p class="p-footer">Desenvolvido por: Matheus Santos </p>
+        </p>
         </a>
     </footer>
 
@@ -280,6 +284,7 @@
     <script src="./assets/js/owl/jquery.min.js"></script>
     <script src="./assets/js/owl/owl.carousel.min.js"></script>
     <script src="./assets/js/owl/setup.js"></script>
+    <script src="./assets/js/owl/index.js"></script>
 </body>
 
 </html>
