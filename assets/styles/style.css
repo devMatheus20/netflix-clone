@@ -80,7 +80,7 @@ main {
 .div-top {
     padding-left: 30px;
     padding-top: 50px;
-    width: 60%;
+    width: 50%;
 }
 
 .article-top {
@@ -100,6 +100,7 @@ main {
     margin-bottom: 40px;
     font-weight: 400;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    text-align: justify;
 }
 
 .btn-play {
